@@ -1,0 +1,29 @@
+环境：
+PHP 5.2  MySql 5.1 
+
+
+1、打开“网站目录”文件夹下的 wp-config.php 文件，依次修改如下几处：
+ /**  数据库的名称,将"数据库用户名"数据库名称  */
+define('DB_NAME', '数据库名称');
+
+/** MySQL 数据库用户名,将"数据库用户名"替换为实际的用户名 */
+define('DB_USER', '数据库用户名');
+
+/** MySQL 数据库密码,将"数据库密码"替换为实际的数据库密码 */
+define('DB_PASSWORD', '数据库密码');
+
+/** MySQL 主机服务器IP,将"Mysql主机IP"替换为实际的主机IP */
+define('DB_HOST', 'Mysql主机IP');
+   
+
+2、设置网站Url
+  打开“数据库建表sql.txt”，跳转到第139行， 找到如下这行代码：
+   INSERT INTO `wp_options` VALUES (1,'siteurl','http://mydm.dameitui.com','yes')
+  将其中的 http://mydm.dameitui.com  替换为您实际的域名即可。
+  
+3、以上两步设置修改完成后，在数据库服务器的指定数据库上执行“数据库建表Sql.txt”，数据库创建完毕后，将“网站目录”下的所有文件上传到空间中即可访问。
+  后台登录地址：
+  http://网站域名/wp-admin
+  用户名：webadmin  初始密码:abcd1234!@#
+
+4、后台使用说明见手册
