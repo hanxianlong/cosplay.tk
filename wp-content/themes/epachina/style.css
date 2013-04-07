@@ -1,0 +1,165 @@
+/* 
+Theme Name: dameitui
+Theme URI: http://dameitui.tk 
+Description: dm
+
+Version: 1.0.1
+Author: dameitui
+Author URI: http://dameitui.tk
+Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, flexible-width, rtl-language-support
+
+License: GNU General Public License v3 or later
+License URI: license.txt 
+ 
+--------------------------------------------------------------
+	
+CSS Rules: Sorted alphabetically for better organization.
+-------------------------------------------------------------- */
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
+:focus { outline:0; }
+a:active { outline:none; }
+ol,ul { list-style:none; }
+body{font-size:12px;margin:0;padding:0}
+#container {
+	width:380px;
+	padding:0px 10px 10px 0px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+#example {
+	width:380px;
+	height:158px;
+	position:relative;
+}
+
+#ribbon {
+	position:absolute;
+	top:-19px;
+	left:-11px;
+	z-index:500;
+	width: 84px;
+	height: 95px;
+}
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:495px;
+	height:200px;
+	top:-20px;
+	left:-55px;
+}
+
+#slides {
+	position:absolute;
+	top:-10px;
+	left:2px;
+	z-index:100;
+}
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:65px;
+	left:-38px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+.slides_container {
+	width:380px;
+	height:158px;
+	overflow:hidden;
+	position:relative;
+}
+
+#slides .next {
+	left:394px;
+}
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+.caption {
+	position:absolute;
+	bottom:-35px;
+	height:30px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:340px;
+	font-size:1em;
+	line-height:1.33;
+	color:#fff;
+	border-top:1px solid #000;
+	text-shadow:none;
+	letter-spacing:0;
+
+}
+
+a:link,a:visited {
+	color:#599100;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	color:#599100;
+	text-decoration:underline;
+}
+.wenzi{ color:#000000; font-size:12px; text-decoration:none;}
+a.wenzi{ color:#000000; font-size:12px; text-decoration:none;}
+a:hover.wenzi{ color:#CC0033; font-size:12px; text-decoration:none;}
+.chongfu {	background-image: url(./images/032.gif);	background-repeat: no-repeat;	background-position: center top;}
+.STYLE2 {font-size: 12px; font-weight: bold; }
+.breadcrumb-list{ white-space:nowrap;}
+.zzz {	font-size: 12px;	font-style: normal;	line-height: 18px;	letter-spacing: 0.2em;	word-spacing: 0.2em;	border: 1px dashed #A73756;}
+.content{font-size:12px;} 
+.content p{margin-bottom:20px;} 
+.singleLeft img{border:solid 6px #E6E6E6; margin-bottom:10px; width:'273px' !important; height:'154px' !important;}
+.biank {
+	border: 3px solid #9F3548;
+	background-color: #EEEEEE;
+}.bbkk {	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	font-size: 12px; width:100%; text-align:left; margin-bottom: 0; line-height: 30px;
+}
+.bbkk input{border:0;}
+.bbkk input[type=text]{width:150px;}
+.bbkk span.left{display:inline-block; width:188px; text-align: right;}
+.bbkk span.right{display:inline-block; text-align: left; padding-left:20px;}
+.STYLE5 {
+	font-size: 24px !important;
+	font-weight: bold !important;
+}
+.counter input{background:transparent; width:60px !important;}
+.counter textarea{width:338px; height:81px;}
